@@ -1,6 +1,6 @@
 Aliases for [uv](https://github.com/astral-sh/uv)
 
-Usage:
-    1. Compile [alias](http://github.com/yantonov/alias) artifact, name it as uv, and put into this repository.  
-    2. Add this repository to the front of PATH.  
-
+### Usage
+1. add this repository to the front of PATH
+2. build alias [alias](http://github.com/yantonov/alias) (or use the available distribution)
+3. name it as uv and put it into this repository (binary file has already ignored inside this repository)
