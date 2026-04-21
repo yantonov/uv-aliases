@@ -1,6 +1,6 @@
 [alias]
 py = "python"
 
-# jupyter
-add-lab="add --dev jupyterlab"
-run-lab="run jupyter lab"
+[alias.jupyter]
+add = "add --dev jupyterlab"
+run = "run jupyter lab"
