@@ -1,7 +1,7 @@
 # About
 [Aliases](https://github.com/yantonov/uv-aliases/blob/master/config.toml) for [uv](https://github.com/astral-sh/uv)
 
-# Usage
+# Installation
 1. clone and add this repository to the front of PATH
 2. use 
 ```bash
