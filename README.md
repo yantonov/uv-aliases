@@ -1,14 +1,59 @@
-### About
-[Aliases](https://github.com/yantonov/uv-aliases/blob/master/config.toml) for [uv](https://github.com/astral-sh/uv).
+# uv-aliases
 
-### Installation
-1. clone and add this repository to the front of PATH
-2. use 
+Useful aliases for [uv](https://github.com/astral-sh/uv), powered by [alias](https://github.com/yantonov/alias).
+
+## Table of contents
+
+- [Installation](#installation)
+- [Examples](#examples)
+- [Configuration](#configuration)
+
+## Installation
+
 ```bash
-    install.sh
+git clone https://github.com/yantonov/uv-aliases.git
+cd uv-aliases
+./install.sh
 ```
-script that downloads latest [alias](http://github.com/yantonov/alias) distribution for the current operating system names it in appropriate way and puts to the current directory  
 
-Alternatively, you can:  
-a) build [alias](http://github.com/yantonov/alias) manually (or use the available distribution)  
-b) name it as uv and put it into this repository (binary file has already ignored inside this repository)  
+Add the repository directory to your `PATH`.
+
+## Examples
+
+**Run Python management commands** using `uv py` instead of `uv python`:
+
+```bash
+uv py --help
+uv py list
+```
+
+**Add JupyterLab** as a development dependency:
+
+```bash
+uv jupyter add
+```
+
+**Launch JupyterLab** in the project environment:
+
+```bash
+uv jupyter run
+```
+
+**Use regular `uv` commands** as usual; commands without matching aliases are forwarded to `uv`:
+
+```bash
+uv --version
+uv sync
+uv add requests
+uv run python --version
+```
+
+List available aliases with:
+
+```bash
+uv --aliases
+```
+
+## Configuration
+
+Aliases are defined in [`config.toml`](config.toml). Edit it to add or modify shortcuts. See the [alias configuration documentation](https://github.com/yantonov/alias#alias-types) for details.
